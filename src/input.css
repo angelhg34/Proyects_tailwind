@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@keyframes rotarizquierdaderecha{
+    0%,
+    100%{
+        transform: rotate(-5deg);
+    }
+    50%{
+        transform: rotate(5deg);
+    }
+}
+
+.content-main{
+    @apply h-screen bg-linear-to-r from-cyan-500 to-blue-900 grid sm:col-span-2 md:col-span-3 lg:col-span-4 font-bold p-[20px];
+}
+.animate-rotar{
+    animation: rotarizquierdaderecha 1s ease-in-out infinite;
+}
